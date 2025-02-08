@@ -1,0 +1,96 @@
+/* Global variables */
+:root {
+    --primary: #12bdff;
+    --primary-hover: #0c8ec2;
+    --dark-primary: #1b1f24;
+    --light-primary: #0c116a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #121212; /* Dark background */
+    width: 100%; /* Full-width background */
+    padding: 15px 0; /* Adjust padding */
+    display: flex;
+    justify-content: center; /* Centers container */
+}
+
+/* Container to limit width */
+.navbar__container {
+    width: 85%; /* Limits content width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+#logo h1 {
+    font-size: 24px;
+    color: #00AEEF; /* Blue color */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00AEEF; /* Highlight effect */
+}
+/*This where we work on the next section*/
+#headshot{
+    max-width: 450px;
+}
+#side{
+    max-width: 450px;
+}
+.light-section{
+    background-color: whitesmoke;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.dark-section{
+    background-color: gray;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    border: #0c8ec2 solid 10px;
+}
+.content{
+    margin: 20px;
+
+}
