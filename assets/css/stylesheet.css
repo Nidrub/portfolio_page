@@ -151,8 +151,8 @@ padding-top: 90px;
 }
 @media only screen and (max-width: 600px){
     .container{
-        padding: 10px;
-        padding-top: 20px;
+        padding: 0;
+        padding-top: 30px;
         margin: auto;
     }
     .content{
