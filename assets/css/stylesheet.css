@@ -124,7 +124,6 @@ i:hover{
 .content{
     flex: 1 1 450px;
     margin: 20px;
-    padding: 20px;
     max-width: 50%;
 
 }
@@ -145,6 +144,28 @@ padding-top: 90px;
     .container{
         justify-content: center;
         align-items: center;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container{
+        padding: 10px;
+        padding-top: 20px;
+    }
+    #headshot{
+        max-width: 300px;
+    }
+    #side{
+        max-width: 300px;
+    }
+    #logo h1 {
+        font-size: 1.3rem;
+    }
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 0.98rem;
     }
 }
 
