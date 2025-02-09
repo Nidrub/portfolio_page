@@ -20,6 +20,7 @@ html{
 h1{
     font-size: 2.5rem;
     color: whitesmoke;
+    line-height: 2rem;
 }
 h2{
     font-size: 2rem;
@@ -33,7 +34,8 @@ p{
     color: var(--text-primary);
     font-weight: 450;
     padding-top: 5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.75;
 }
 i{
     color: whitesmoke;
@@ -118,7 +120,7 @@ i:hover{
     justify-content: space-between;
     padding: 50px;
     align-items: center;
-    background-color: gray;
+
 
 }
 .content{
@@ -165,7 +167,7 @@ padding-top: 90px;
     }
 
     p{
-        font-size: 0.98rem;
+        font-size: 0.875rem;
     }
     h1{
         font-size: 1.8rem;
