@@ -3,7 +3,7 @@
     --primary: #5f43b2;
     --primary-text-2: #b1aebb;
     --dark-primary: #3a3153;
-    --light-primary: #5f43b2;
+    --light-primary: #443a63;
     --text-primary: #e8dfff;
 }
 
@@ -37,10 +37,16 @@ p{
     font-weight: 450;
     padding-top: 5px;
 }
+i{
+    color: antiquewhite;
+    font-size: 2.5rem;
+    padding-right: 10px;
+    padding-top: 10px;
+}
 
 /* Navigation Bar */
 .navbar {
-    background-color: black; /* Dark background */
+    background-color: var(--dark-primary); /* Dark background */
     width: 100%; /* Full-width background */
     padding: 15px 0; /* Adjust padding */
     display: flex;
@@ -82,7 +88,7 @@ p{
 }
 
 .nav-links a:hover {
-    color: var(--text-primary); /* Blue color */
+    color: antiquewhite; /* Blue color */
 }
 /*This where we work on the next section*/
 #headshot{
@@ -96,13 +102,13 @@ p{
 }
 .light-section{
     background-color: var(--light-primary);
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .dark-section{
     background-color: var(--dark-primary);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .container{
     max-width: 85%;
@@ -116,6 +122,9 @@ p{
 .content{
     flex: 1 1 450px;
     margin: 20px;
+}
+#Home{
+padding-top: 90px;
 }
 
 @media only screen and (max-width: 768px){
