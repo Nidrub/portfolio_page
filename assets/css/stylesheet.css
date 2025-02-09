@@ -1,9 +1,10 @@
 /* Global variables */
 :root {
-    --primary: #12bdff;
-    --primary-hover: #0c8ec2;
-    --dark-primary: #1b1f24;
-    --light-primary: #0c116a;
+    --primary: #5f43b2;
+    --primary-text-2: #b1aebb;
+    --dark-primary: #3a3153;
+    --light-primary: #5f43b2;
+    --text-primary: #fefdfd;
 }
 
 * {
@@ -19,14 +20,19 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+h1{
+    font-size: 2rem;
+    color: whitesmoke;
+}
 
 /* Navigation Bar */
 .navbar {
-    background-color: #121212; /* Dark background */
+    background-color: black; /* Dark background */
     width: 100%; /* Full-width background */
     padding: 15px 0; /* Adjust padding */
     display: flex;
     justify-content: center; /* Centers container */
+    position: fixed;
 }
 
 /* Container to limit width */
@@ -40,7 +46,7 @@
 /* Logo Styling */
 #logo h1 {
     font-size: 24px;
-    color: #00AEEF; /* Blue color */
+    color: var(--primary-text-2); /* Blue color */
 }
 
 /* Navigation Links */
@@ -55,32 +61,32 @@
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: var(--text-primary);
     font-size: 16px;
     transition: 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #00AEEF; /* Highlight effect */
+    color: var(--primary-text-2); /* Highlight effect */
 }
 /*This where we work on the next section*/
 #headshot{
     max-width: 450px;
-    flex: 1 1 450px; /* Ensures they don't get smaller than 450px */
+
+
 }
 #side{
     max-width: 450px;
-    flex: 1 1 450px; /* Ensures they don't get smaller than 450px */
+
 }
 .light-section{
-    background-color: whitesmoke;
-    display: flex;
+    background-color: var(--light-primary);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .dark-section{
-    background-color: gray;
-    display: flex;
+    background-color: var(--dark-primary);
+
 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -97,6 +103,14 @@
 .content{
     flex: 1 1 450px;
     margin: 20px;
+}
+.content h1{
+
+}
+@media only screen and (max-width: 768px){
+    #headshot{
+       max-width: 100%;
+    }
 }
 
 
