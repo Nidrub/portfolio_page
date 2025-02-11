@@ -148,6 +148,9 @@ padding-top: 100px;
     color: antiquewhite;
 }
 /* Contact form*/
+#email{
+    padding-top: 25px;
+}
 #contact-form{
     padding-top: 10px;
     display: flex;
@@ -251,7 +254,10 @@ padding-top: 100px;
         box-shadow: none;
     }
     input{
-        touch-action: manipulation;
+        font-size: 1rem;
+    }
+    textarea{
+        font-size: 1rem;
     }
 
 }
