@@ -245,6 +245,9 @@ padding-top: 100px;
         outline: none;
 
     }
+    .contact-info:hover{
+        box-shadow: none;
+    }
 
 }
 
