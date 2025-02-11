@@ -19,7 +19,7 @@
 <nav class="navbar">
   <div class="navbar__container">
     <div id="logo">
-      <h1><span>Front-end Developer</span></h1>
+      <h1>Front-end Developer</h1>
     </div>
     <ul class="nav-links">
       <li>
@@ -27,6 +27,12 @@
       </li>
       <li>
         <a href=#About>About</a>
+      </li>
+      <li>
+        <a href=#Projects>Projects</a>
+      </li>
+      <li>
+        <a href=#Contact>Contact</a>
       </li>
     </ul>
   </div>
@@ -58,13 +64,51 @@
       <p>
         Hello! I'm Ruben, a Front-End Developer with a strong foundation in web technologies and a passion for creating
         engaging, visually appealing, and user-friendly websites.<br>
-        I hold a degree in Computer Science from <a href="https://www.utdallas.edu/" class="paragraph-link" target="_blank">The University of Texas at Dallas</a>, where I developed my expertise in
-        web development and problem-solving through hands-on projects. My passion for photography also plays a key
+        I hold a degree in Computer Science from <a href="https://www.utdallas.edu/" class="paragraph-link">The University of Texas at Dallas</a>,
+        where I developed my expertise in web development and problem-solving through hands-on projects. My passion for
+        photography also plays a key
         role in my work, allowing me to enhance websites with striking visuals and refined aesthetics.<br>
-        To continuously expand my skill set, I am currently attending Dallas College in Richardson, Texas, pursuing certifications in AWS and CompTIA Linux+. These additional qualifications help me stay ahead in modern web development and cloud technologies.
+        To continuously expand my skill set, I am currently attending
+        <a href="https://www.dallascollege.edu/pages/default.aspx" class="paragraph-link">Dallas College</a> in
+        Richardson, Texas, pursuing certifications in AWS and CompTIA Linux+. These additional qualifications help me
+        stay ahead in modern web development and cloud technologies.
       </p>
     </div>
-    <img src="assets/img/headshot.jpg" alt="Not available" id="side">
+    <img src="assets/img/1x1_profile.jpg" alt="Not available" id="side">
+  </div>
+</section>
+<section class="dark-section" id="Projects">
+  <div class="container">
+    <div class="content">
+      <h1>Projects</h1>
+      <p >
+        Currently Working in Projects.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="light-section" id="Contact">
+  <div class="container">
+    <div class="content" >
+      <h1>Contact Me</h1>
+      <form action="https://api.web3forms.com/submit" id="contact-form" method="POST">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="0d29b9a6-cbeb-4532-801f-40e3aa36e4e6">
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <input type="text" name="name"  placeholder="Your Name" class="contact-info" required>
+        <input type="email" name="email" placeholder="Email" class="contact-info" required>
+        <textarea name="message" placeholder="Message" class="contact-info" required></textarea>
+
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+        <button type="submit" id="submit">Submit</button>
+
+      </form>
+    </div>
   </div>
 </section>
 
