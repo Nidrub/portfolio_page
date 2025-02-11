@@ -5,6 +5,7 @@
     --dark-primary: #3a3153;
     --light-primary: #443a63;
     --text-primary: #e8dfff;
+    --h1-secondary: #d3bff1;
 }
 
 /* Reset default styles */
@@ -20,7 +21,7 @@ html{
 h1{
     font-size: 2.5rem;
     color: whitesmoke;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 h2{
     font-size: 2rem;
@@ -43,6 +44,9 @@ i{
     font-size: 2.5rem;
     padding-right: 10px;
     padding-top: 10px;
+}
+.change-color{
+    color: var(--h1-secondary);
 }
 i:hover{
     color: antiquewhite;
@@ -232,6 +236,7 @@ padding-top: 100px;
     }
     h1{
         font-size: 1.8rem;
+        line-height: 2rem;
     }
     h3{
         font-size: 1.2rem;
