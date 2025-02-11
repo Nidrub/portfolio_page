@@ -129,8 +129,6 @@ i:hover{
     justify-content: space-between;
     padding: 50px;
     align-items: center;
-
-
 }
 .content{
     flex: 1 1 450px;
@@ -191,7 +189,6 @@ padding-top: 100px;
     border-radius: 50px;
     font-weight: 500;
     background-color: var(--primary);
-
 }
 
 @media only screen and (max-width: 1250px){
@@ -252,6 +249,9 @@ padding-top: 100px;
     }
     .contact-info:hover{
         box-shadow: none;
+    }
+    input{
+        touch-action: manipulation;
     }
 
 }
