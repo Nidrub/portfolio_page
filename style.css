@@ -254,7 +254,7 @@ section a{
 }
 /*contact-info sections*/
 .Contact-Info{
-    max-width: 100%;
+    max-width: 600px;
     width: 100%;
     height: 50px;
     border: none;
@@ -284,6 +284,9 @@ footer p{
     #Home .Container{
         justify-content: center;
 
+    }
+    .Contact-Info{
+        max-width: 450px;
     }
 }
 @media only screen and (max-width: 600px){
