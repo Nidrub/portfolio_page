@@ -1,0 +1,377 @@
+:root{
+    --DarkGrey: #353535;
+    --GreenBlue: #3C6E71;
+    --White: #FFFFFF;
+    --LightGrey: #D9D9D9;
+    --DarkBlue: #284B63;
+    --HeaderHeight: 7.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+.Container{
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+/*header*/
+header{
+    background-color: var(--DarkGrey);
+    width: 100%;
+    height: var(--HeaderHeight);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    align-content: center;
+}
+header h1{
+    color: var(--LightGrey);
+}
+header h2{
+    color: var(--White);
+}
+/*navigation bar*/
+#navbar{
+    list-style: none;
+    display: flex;
+    font-weight: 500;
+}
+#navbar li{
+    margin: 0 10px;
+}
+#navbar  a{
+    text-decoration: none;
+    color: var(--LightGrey);
+    font-weight: 650;
+    font-size: 1.3rem;
+    position: relative; /*needed for it to show under it*/
+    transition: all 0.3s ease;
+}
+#navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 0;
+    height: 2px; /* Thickness of underline */
+    background-color: var(--White); /* Uses the same color as the icon/text */
+    transition: width 0.3s ease;
+}
+#navbar a:hover{
+    color: var(--White);
+}
+#navbar a:hover::after {
+    width: 100%;
+}
+/*sections*/
+section{
+    padding: 50px;
+    scroll-margin-top: var(--HeaderHeight);
+}
+section h1{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+section h2{
+    font-size: 2rem;
+}
+section h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+section p{
+    font-weight: 450;
+    padding-top: 5px;
+    font-size: 1.1rem;
+    line-height: 1.75;
+}
+/*the logos to contact me*/
+section i{
+    font-size: 2.5rem;
+    padding: 10px 5px 0;
+}
+/*section links*/
+section a{
+    text-decoration: none;
+}
+/*text sections*/
+.Half-Text{
+    margin: 20px;
+    max-width: 50%;
+}
+/*GreenBlue setting*/
+.Green-Blue-Setting{
+    background-color: var(--GreenBlue);
+    padding: 10rem 0;
+}
+.Green-Blue-Setting h1, .Green-Blue-Setting p{
+    color: var(--White);
+}
+.Green-Blue-Setting h2, .Green-Blue-Setting h3, .Green-Blue-Setting i{
+    color: var(--LightGrey);
+}
+.Green-Blue-Setting i{
+    color: var(--LightGrey);
+    position: relative;
+    transition: all 0.3s ease;
+}
+.Green-Blue-Setting i::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 0;
+    height: 2px; /* Thickness of underline */
+    background-color: var(--White); /* Uses the same color as the icon/text */
+    transition: width 0.3s ease;
+}
+.Green-Blue-Setting i:hover{
+    color: var(--White);
+}
+.Green-Blue-Setting i:hover::after {
+    width: 100%;
+}
+#Headshot{
+    max-width: 450px;
+    border-radius: 15px;
+    border: 10px solid var(--LightGrey);
+}
+/* Make sure the About section fills space */
+
+.Background-Image-Setting {
+    position: relative;
+
+    overflow: hidden;
+    color: white;    /* text visible on dark images */
+}
+
+/* Background container */
+.Background {
+    inset: 0;
+    z-index: 0;
+}
+
+/* Keyframes for multiple images (4 here) */
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.Background img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    filter: brightness(50%);
+    animation: fade 16s  infinite;
+}
+
+/* Stagger animations (4 images = 4 delays) */
+.Background img:nth-of-type(1) { animation-delay: 0s; }
+.Background img:nth-of-type(2) { animation-delay: 4s; }
+.Background img:nth-of-type(3) { animation-delay: 8s; }
+.Background img:nth-of-type(4) { animation-delay: 12s; }
+
+/* Foreground content sits on top */
+.Background-Image-Setting .Container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: revert;
+
+}
+.Background-Image-Setting{
+    padding: 20rem 0;
+}
+.Background-Image-Setting h1, .Background-Image-Setting p{
+    color: var(--White);
+}
+.Background-Image-Setting h2, .Background-Image-Setting h3{
+    color: var(--LightGrey);
+}
+.Background-Image-Setting a{
+    color: antiquewhite;
+}
+#Projects{
+    background-color: var(--LightGrey);
+    padding: 10rem 0;
+}
+/*Contact Me Section*/
+#Contact{
+    background-color: var(--DarkGrey);
+    padding: 10rem 0;
+}
+#Contact h1{
+    padding-bottom: 1.5rem;
+    color: var(--LightGrey);
+}
+/*Contact Form*/
+#Contact-Form{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+#Contact-Form textarea{
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+#Contact-Form button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: var(--DarkBlue);
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+}
+/*contact-info sections*/
+.Contact-Info{
+    max-width: 100%;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    border-radius: 50px;
+}
+.Contact-Info:focus{
+    border : 3.5px solid var(--GreenBlue);
+}
+.Contact-Info::placeholder{
+    color: #858282;
+}
+.Contact-Info:hover{
+    box-shadow: 5px 3px 8px whitesmoke;
+}
+footer{
+    background-color: var(--DarkGrey);
+    text-align: center;
+    color: var(--White);
+    padding: 2rem 0;
+}
+footer p{
+    padding: 1rem 0;
+}
+@media only screen and (max-width: 1250px){
+    #Home .Container{
+        justify-content: center;
+
+    }
+}
+@media only screen and (max-width: 600px){
+    html, body {
+        width: 100%;
+        overflow-x: hidden; /* prevent horizontal scroll */
+    }
+    .Logo h1{
+        font-size: 1.3rem;
+    }
+    .Logo h2{
+        font-size: 0.9rem;
+    }
+    .Logo{
+        text-align: center;
+    }
+    header{
+        height: fit-content;
+        position: fixed;
+    }
+    header .Container{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    #navbar{
+        padding: 1rem 0;
+    }
+    #navbar a{
+        font-size: 0.9rem;
+    }
+    section .Container {
+        max-width: 95%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem; /* small horizontal padding */
+    }
+    #Headshot{
+        max-width: 90%;
+        height: auto;
+    }
+    .Half-Text{
+        max-width: 100%;
+    }
+    section h1{
+        font-size: 2rem;
+    }
+    section h2{
+        font-size: 1.5rem;
+    }
+    section h3{
+        font-size: 1.2rem;
+    }
+    section p{
+        font-size: 0.875rem;
+    }
+    footer p{
+        font-size: 0.875rem;
+    }
+/*    other with the image*/
+/*    Project part*/
+
+/*    contact me*/
+    .Text{
+        max-width: 100%;
+        width: 100%;
+    }
+    #Contact .Content{
+        max-width: 100%;
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    .Contact-Info:hover{
+        box-shadow: none;
+    }
+    input{
+        font-size: 1rem;
+    }
+    textarea{
+        font-size: 1rem;
+    }
+
+
+
+
+
+}
