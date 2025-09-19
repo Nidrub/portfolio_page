@@ -324,7 +324,7 @@ footer p{
         font-size: 0.9rem;
     }
     header{
-        height: fit-content;
+        height: 12vh;
         position: fixed;
     }
     header .Container{
@@ -352,6 +352,9 @@ footer p{
     }
     .Half-Text{
         max-width: 100%;
+    }
+    section{
+        scroll-margin: 12vh 1vh;
     }
     section h1{
         font-size: 1.7rem;
