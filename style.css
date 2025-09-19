@@ -376,6 +376,9 @@ footer p{
 /*    Project part*/
 
 /*    contact me*/
+    #Contact{
+        padding-top: 4vh;
+    }
     #Contact-Form input{
         width: 80%;
     }
