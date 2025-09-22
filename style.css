@@ -23,6 +23,10 @@ section .Container{
     justify-content: space-between;
     align-items: center;
 }
+#Home .Container{
+    justify-content: center;
+
+}
 /*header*/
 header{
     background-color: var(--DarkGrey);
@@ -288,10 +292,7 @@ footer p{
 }
 /*Tablet screen*/
 @media only screen and (max-width: 1250px){
-    #Home .Container{
-        justify-content: center;
 
-    }
     #Contact-Form textarea{
         min-width: 80vw;
     }
