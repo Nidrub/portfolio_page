@@ -401,6 +401,11 @@ footer p{
     footer p{
         font-size: 0.875rem;
     }
+    .Icon i{
+        font-size: 2rem;
+        padding: 5px 0 0 7px;
+
+    }
 /*    other with the image*/
     .background-img-rotation{
         padding: 40px 0;
