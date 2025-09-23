@@ -11,7 +11,7 @@ const observer= new IntersectionObserver(entries => {
           observer.unobserve(entry.target);
       }
     });
-},{threshold: 0.5} );//trigger when 20% vis
+},{threshold: 0.2} );//trigger when 20% vis
 // add the animations to all that have the fade in right effect
 fadeInRightElements.forEach(el => observer.observe(el));
 fadeInUpElements.forEach(el => observer.observe(el));
