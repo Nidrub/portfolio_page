@@ -165,7 +165,11 @@ section a{
     color: white;    /* text visible on dark images */
 }
 
-
+/* Background container */
+#background {
+    inset: 0;
+    z-index: 0;
+}
 
 /* Keyframes for multiple images (4 here) */
 @keyframes fade {
@@ -175,7 +179,6 @@ section a{
     50% { opacity: 0; }
     100% { opacity: 0; }
 }
-
 
 #background img {
     position: absolute;
