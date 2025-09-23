@@ -127,15 +127,15 @@ section a{
 .green-blue-section h1, .green-blue-section p{
     color: var(--White);
 }
-.green-blue-section h2, .green-blue-section h3, .green-blue-section i{
+.green-blue-section h2, .green-blue-section h3, .green-blue-section .half-text i{
     color: var(--LightGrey);
 }
-.green-blue-section i{
+.green-blue-section .half-text i{
     color: var(--LightGrey);
     position: relative;
     transition: all 0.3s ease;
 }
-.green-blue-section i::after {
+.green-blue-section .half-text i::after {
     content: '';
     position: absolute;
     left: 0;
@@ -145,10 +145,10 @@ section a{
     background-color: var(--White); /* Uses the same color as the icon/text */
     transition: width 0.3s ease;
 }
-.green-blue-section i:hover{
+.green-blue-section .half-text i:hover{
     color: var(--White);
 }
-.green-blue-section i:hover::after {
+.green-blue-section .half-text i:hover::after {
     width: 100%;
 }
 #headshot{
