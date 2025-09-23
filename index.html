@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Ruben Rodriguez Portfolio</title>
+<!--    Preload images-->
+    <link rel="preload" href="img/headshot.webp" as="image">
+<!--    preload first image on background -->
+    <link rel="preload" href="img/img1.webp" as="image"
+    imagesrcset="img/img1.wep 1000w, img/img1.webp 1600w"
+    imagesizes="100vw"
+    >
 </head>
 <body>
 
@@ -58,11 +65,31 @@
     <!-- About Section -->
     <section id="about" class="background-img-rotation">
         <div id="background">
-            <img src="img/img1.webp" alt="none" loading="lazy">
-            <img src="img/img2.webp" alt="none" loading="lazy">
-            <img src="img/img3.webp" alt="none" loading="lazy">
-            <img src="img/img4.webp" alt="none" loading="lazy">
+            <img
+                    src="img/img1.webp"
+                    srcset="img/img1-1000.webp 1000w, img/img1.webp 1600w"
+                    sizes="100vw"
+                    alt="background 1">
+
+            <img
+                    src="img/img2.webp"
+                    srcset="img/img2-1000.webp 1000w, img/img2.webp 1600w"
+                    sizes="100vw"
+                    alt="background 2">
+
+            <img
+                    src="img/img3.webp"
+                    srcset="img/img3-1000.webp 1000w, img/img3.webp 1600w"
+                    sizes="100vw"
+                    alt="background 3">
+
+            <img
+                    src="img/img4.webp"
+                    srcset="img/img4-1000.webp 1000w, img/img4.webp 1600w"
+                    sizes="100vw"
+                    alt="background 4">
         </div>
+
         <div class="container fade-in-up">
             <div class="content">
                 <div class="text">

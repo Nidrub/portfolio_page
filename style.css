@@ -188,7 +188,8 @@ section a{
     object-fit: cover;
     opacity: 0;
     filter: brightness(40%);
-    animation: fade 16s  infinite;
+    animation: fade 16s infinite;
+    will-change: opacity; /* hint browser for smoother GPU rendering*/
 }
 
 /* Stagger animations (4 images = 4 delays) */
@@ -312,16 +313,6 @@ footer p{
     opacity: 1;
     transform: translateY(0);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
