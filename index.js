@@ -1,6 +1,8 @@
 const fadeInRightElements = document.querySelectorAll('.fade-in-right');
 const fadeInUpElements = document.querySelectorAll('.fade-in-up');
 
+
+
 //for any element that appears 20% of the element is on screen
 const observer= new IntersectionObserver(entries => {
     entries.forEach(entry => {
