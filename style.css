@@ -15,7 +15,7 @@ html{
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-section .Container{
+section .container{
     max-width: 85%;
     margin: auto;
     display: flex;
@@ -23,9 +23,9 @@ section .Container{
     justify-content: space-between;
     align-items: center;
 }
-#Home .Container{
+#home .container{
     justify-content: center;
-
+    align-items: center;
 }
 /*header*/
 header{
@@ -37,7 +37,7 @@ header{
     z-index: 10;
     align-content: center;
 }
-header .Container{
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,27 +115,27 @@ section a{
     text-decoration: none;
 }
 /*text sections*/
-.Half-Text{
+.half-text{
     margin: 20px;
     max-width: 50%;
 }
 /*GreenBlue setting*/
-.Green-Blue-Setting{
+.green-blue-section{
     background-color: var(--GreenBlue);
     padding: 10rem 0;
 }
-.Green-Blue-Setting h1, .Green-Blue-Setting p{
+.green-blue-section h1, .green-blue-section p{
     color: var(--White);
 }
-.Green-Blue-Setting h2, .Green-Blue-Setting h3, .Green-Blue-Setting i{
+.green-blue-section h2, .green-blue-section h3, .green-blue-section i{
     color: var(--LightGrey);
 }
-.Green-Blue-Setting i{
+.green-blue-section i{
     color: var(--LightGrey);
     position: relative;
     transition: all 0.3s ease;
 }
-.Green-Blue-Setting i::after {
+.green-blue-section i::after {
     content: '';
     position: absolute;
     left: 0;
@@ -145,13 +145,13 @@ section a{
     background-color: var(--White); /* Uses the same color as the icon/text */
     transition: width 0.3s ease;
 }
-.Green-Blue-Setting i:hover{
+.green-blue-section i:hover{
     color: var(--White);
 }
-.Green-Blue-Setting i:hover::after {
+.green-blue-section i:hover::after {
     width: 100%;
 }
-#Headshot{
+#headshot{
     max-width: 500px;
     width: 100%;
     border-radius: 15px;
@@ -159,14 +159,14 @@ section a{
 }
 /* Make sure the About section fills space */
 
-.Background-Image-Setting {
+.background-img-rotation {
     position: relative;
     overflow: hidden;
     color: white;    /* text visible on dark images */
 }
 
 /* Background container */
-.Background {
+.background {
     inset: 0;
     z-index: 0;
 }
@@ -180,7 +180,7 @@ section a{
     100% { opacity: 0; }
 }
 
-.Background img {
+.background img {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -192,13 +192,13 @@ section a{
 }
 
 /* Stagger animations (4 images = 4 delays) */
-.Background img:nth-of-type(1) { animation-delay: 0s; }
-.Background img:nth-of-type(2) { animation-delay: 4s; }
-.Background img:nth-of-type(3) { animation-delay: 8s; }
-.Background img:nth-of-type(4) { animation-delay: 12s; }
+.background img:nth-of-type(1) { animation-delay: 0s; }
+.background img:nth-of-type(2) { animation-delay: 4s; }
+.background img:nth-of-type(3) { animation-delay: 8s; }
+.background img:nth-of-type(4) { animation-delay: 12s; }
 
 /* Foreground content sits on top */
-.Background-Image-Setting .Container {
+.background-img-rotation .container {
     position: relative;
     margin: auto;
     top: 0;
@@ -207,44 +207,44 @@ section a{
     right: 0;
 
 }
-.Background-Image-Setting{
+.background-img-rotation{
     padding: 32vh 0;
 }
-.Background-Image-Setting h1, .Background-Image-Setting p{
+.background-img-rotation h1, .background-img-rotation p{
     color: var(--White);
 }
-.Background-Image-Setting h2, .Background-Image-Setting h3{
+.background-img-rotation h2, .background-img-rotation h3{
     color: var(--LightGrey);
 }
-.Background-Image-Setting a{
+.background-img-rotation a{
     color: antiquewhite;
 }
-#Projects{
+#projects{
     background-color: var(--LightGrey);
     padding: 10rem 0;
 }
 /*Contact Me Section*/
-#Contact{
+#contact{
     background-color: var(--DarkGrey);
     padding: 10rem 0;
 }
-#Contact h1{
+#contact h1{
     padding-bottom: 1.5rem;
     color: var(--LightGrey);
 }
 /*Contact Form*/
-#Contact-Form{
+#contact-form{
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 1rem;
 }
-#Contact-Form input{
+#contact-form input{
     width: 20vw;
     font-size: 0.8rem;
 }
-#Contact-Form textarea{
+#contact-form textarea{
     min-height: 20vh;
     min-width: 40vw;
     max-width: 50vw;
@@ -252,7 +252,7 @@ section a{
     border-radius: 20px;
     font-size: 0.8rem;
 }
-#Contact-Form button{
+#contact-form button{
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -265,20 +265,20 @@ section a{
     font-weight: 500;
 }
 /*contact-info sections*/
-.Contact-Info{
+.contact-info{
     height: 50px;
     border: none;
     outline: none;
     padding-left: 25px;
     border-radius: 50px;
 }
-.Contact-Info:focus{
+.contact-info:focus{
     border : 3.5px solid var(--GreenBlue);
 }
-.Contact-Info::placeholder{
+.contact-info::placeholder{
     color: #858282;
 }
-.Contact-Info:hover{
+.contact-info:hover{
     box-shadow: 5px 3px 8px whitesmoke;
 }
 footer{
@@ -290,13 +290,50 @@ footer{
 footer p{
     padding: 1rem 0;
 }
+/*effects*/
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(80px);
+    /*whenever opacity or transform changes, ease in*/
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.fade-in-up{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in-up.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Tablet screen*/
 @media only screen and (max-width: 1250px){
 
-    #Contact-Form textarea{
+    #contact-form textarea{
         min-width: 80vw;
     }
-    #Contact-Form input{
+    #contact-form input{
         width: 40vw;
     }
 
@@ -307,13 +344,13 @@ footer p{
         overflow-x: hidden; /* prevent horizontal scroll */
         font-size: 18px;
     }
-    .Logo h1{
+    .logo h1{
         font-size: 1.3rem;
     }
-    .Logo h2{
+    .logo h2{
         font-size: 0.9rem;
     }
-    .Logo{
+    .logo{
         text-align: center;
         margin:0;
         padding: 0.2rem 0 0 0 ;
@@ -328,7 +365,7 @@ footer p{
         height: 12vh;
         position: fixed;
     }
-    header .Container{
+    header .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -336,7 +373,7 @@ footer p{
         padding-bottom: 8px;
     }
 
-    section .Container {
+    section .container {
         max-width: 90%;
         flex-direction: column-reverse;
         align-items: center;
@@ -347,11 +384,11 @@ footer p{
         display: flex;
         justify-content: center;
     }
-    #Headshot{
+    #headshot{
         max-width: 90%;
         height: auto;
     }
-    .Half-Text{
+    .half-text{
         max-width: 100%;
     }
     section{
@@ -374,28 +411,28 @@ footer p{
         font-size: 0.875rem;
     }
 /*    other with the image*/
-    .Background-Image-Setting{
+    .background-img-rotation{
         padding: 40px 0;
     }
 /*    Project part*/
 
 /*    contact me*/
-    #Contact{
+    #contact{
         padding-top: 4vh;
     }
-    #Contact-Form input{
+    #contact-form input{
         width: 80%;
     }
-    #Contact-Form textarea{
+    #contact-form textarea{
         width: 100%;
         height: 30vh;
     }
-    #Contact .Content{
+    #contact .content{
         max-width: 100%;
         width: 100%;
         flex: 1 1 100%;
     }
-    .Contact-Info:hover{
+    .contact-info:hover{
         box-shadow: none;
     }
     input{
