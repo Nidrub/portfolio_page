@@ -130,11 +130,11 @@
                     <h1>Contact Me</h1>
                     <form action="https://api.web3forms.com/submit" id="contact-form" method="POST">
                         <input type="hidden" name="access_key" value="0d29b9a6-cbeb-4532-801f-40e3aa36e4e6">
-                        <input type="text" name="name" placeholder="Your Name" class="contact-info" required>
-                        <input type="email" name="email" placeholder="Email" class="contact-info" required>
-                        <textarea name="message" placeholder="Message" class="contact-info" required></textarea>
+                        <input type="text" name="name" placeholder="Your Name" class="contact-info" aria-label="name" required>
+                        <input type="email" name="email" placeholder="Email" class="contact-info" aria-label="email" required>
+                        <textarea name="message" placeholder="Message" class="contact-info" aria-label="message" required></textarea>
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        <button type="submit" id="SubmitButton">Submit</button>
+                        <button type="submit" id="SubmitButton" aria-label="submit">Submit</button>
                     </form>
                 </div>
             </div>
